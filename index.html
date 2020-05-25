@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sometext"></p>
+    <script src='home.js'></script>
+
+    <script>
+    let students = `[
+    {
+        "name": "Ruchi",
+        "age": 20,
+        "height": 160
+      },
+      {
+        "name": "Rani",
+        "age": 21,
+        "height": 170
+      }
+    ]`
+      console.log(students);
+      console.log(JSON.parse(students)[1].name);
+    </script>
+</body>
+</html>
