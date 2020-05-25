@@ -2,27 +2,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel = "stylesheet" href ="style.css">
+    <link rel ="stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Javascript on Steroids</title>   
+    
 </head>
 <body>
-    <p id="sometext"></p>
-    <script src='home.js'></script>
+    <div class="container-1">
+     <h2>Challenge 1: Your Age in Days</h2>
+      <div class ="flex-box-container-1">
+         <div>
+           <button class = "btn btn-primary" onclick ="ageInDays()">Click me</button>
+         </div>
+         <div>
+           <button class ="btn btn-danger" onclick="reset()">Reset</button>
+         </div>
+       </div> 
+       <div class="flex-box-container-1">
+           <div id = "flex-box-result">
 
-    <script>
-    let students = `[
-    {
-        "name": "Ruchi",
-        "age": 20,
-        "height": 160
-      },
-      {
-        "name": "Rani",
-        "age": 21,
-        "height": 170
-      }
-    ]`
-      console.log(students);
-      console.log(JSON.parse(students)[1].name);
-    </script>
+           </div>
+       </div>
+    </div>    
+
+    <div class = "container-2">
+      <h2>Challenge 2: Rock, Paper, Scissors</h2>
+    <div class = "flex-box-rps" id="flex-box-rps-div">
+      <img src = "img/rock.jfif" id = "rock" height = 150 width = 150 alt ="" onclick ="rpsGame(this)">
+      <img src = "img/paper.jfif" id = "paper" height = 150 width = 150 alt ="" onclick ="rpsGame(this)">
+      <img src = "img/scissor.jfif" id = "scissors" height = 150 width = 150 alt ="" onclick ="rpsGame(this)">
+    </div>
+    </div>
+
+    <script src = "script.js"></script>
 </body>
 </html>
